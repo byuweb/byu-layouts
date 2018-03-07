@@ -21,6 +21,7 @@
     <title></title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo.css" />
 
     <link type="text/css" rel="stylesheet" href="//cloud.typography.com/75214/6517752/css/fonts.css" media="all" />
 
@@ -29,137 +30,25 @@
     <script async src="https://cdn.byu.edu/byu-theme-components/latest/byu-theme-components.min.js"></script>
 
     <!-- Import the BYU-Card-Layout -->
-    <script src="./dist/components.min.js"></script>
+    <script src="../dist/components.min.js"></script>
     <!-- Import the BYU-Card -->
     <script src="https://cdn.byu.edu/byu-card/latest/byu-card.min.js"></script>
 
-    <style>
-        html {
-            height: 100%;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .page-content {
-            flex: 1;
-            margin: 0 auto;
-            max-width: 1200px;
-            width: 100%;
-            padding: 16px;
-            box-sizing: border-box;
-        }
-
-        .test-wrapper {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-        }
-
-        .test-wrapper byu-card {
-            display: table;
-            margin-right: 30px;
-        }
-    </style>
 </head>
 
 <body>
     <byu-header>
         <span slot="site-title">BYU Layouts Demo Site</span>
         <byu-menu slot="nav">
+            <a href="index.html">Home</a>
             <a href="uniform.html">Uniform</a>
-            <a href="non-uniform.html">Non-Uniform</a>
+            <a href="non-uniform.html" class="active">Non-Uniform</a>
         </byu-menu>
     </byu-header>
 
     <div class="page-content">
-        <h1>Examples of the BYU Card component</h1>
-        <div class="test-wrapper">
-            <byu-card>
-                <h2>Title of Page Here</h2>
-                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <p>There is a lot of information on this card. Starting with:</p>
-                <ul>
-                    <li>
-                        <a href="page-1">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="page-2">Link 2</a>
-                    </li>
-                </ul>
-                <p>There is even more on this card. A lot of text to read and I can put links in wherever I would like. For
-                    example,
-                    <a href="../blog">read our blog</a>.
-                </p>
-            </byu-card>
 
-            <byu-card>
-                <h1>Title of Page Here</h2>
-                    <p>There is a lot of information on this card. Starting with:</p>
-                    <p>There is even more on this card. A lot of text to read and I can put links in wherever I would like.
-                        For example,
-                        <a href="../blog">read our blog</a>.
-                    </p>
-            </byu-card>
-
-            <byu-card>
-                <h2>Title of Page Here</h2>
-                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <p>Not much information on this card.</p>
-            </byu-card>
-
-            <byu-card>
-                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here</h2>
-            </byu-card>
-
-            <byu-card>
-                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here</h2>
-                <p>Not much information on this card.</p>
-            </byu-card>
-        </div>
-
-        <h1>BYU Cards in a BYU Card Layout (Uniform)</h1>
-        <byu-card-layout uniform max-row="4">
-
-            <byu-card>
-                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here 1</h2>
-            </byu-card>
-
-            <byu-card>
-                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here 2</h2>
-            </byu-card>
-
-            <byu-card>
-                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here 3</h2>
-            </byu-card>
-
-            <byu-card>
-                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here 4</h2>
-            </byu-card>
-
-            <byu-card>
-                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here 5</h2>
-            </byu-card>
-
-            <byu-card>
-                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here 6</h2>
-            </byu-card>
-
-        </byu-card-layout>
-
-        <h1>BYU Cards in a BYU Card Layout (Non-Uniform)</h1>
+        <h1 class="header">Non-Uniform BYU Card Layout</h1>
         <byu-card-layout non-uniform max-row="3">
 
             <byu-card>

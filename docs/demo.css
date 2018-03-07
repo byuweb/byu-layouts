@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.page-content {
+    flex: 1;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.header {
+    font-family: "Vitesse A", "Vitesse B", Georgia, serif;
+    color: #002E5D;
+}
+
+.test-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.test-wrapper byu-card {
+    display: table;
+    margin-right: 30px;
+}

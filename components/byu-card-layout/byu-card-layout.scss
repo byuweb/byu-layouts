@@ -1,20 +1,13 @@
 @import "/byu-card-layout-common.scss";
 
 :host {
-    display: flex;
-    flex-wrap: wrap;
+    @include cardLayoutMain();
 }
 
 :host([uniform]) {
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include uniformLayout();
 }
 
 :host([non-uniform]) {
-    flex-direction: column;
-    max-height: 165vh;
-
-    byu-card {
-        display: table;
-    }
+    @include nonUniformLayout();
 }

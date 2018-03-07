@@ -1,0 +1,103 @@
+<!--
+  ~  @license
+  ~    Copyright 2016 Brigham Young University
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo.css" />
+
+    <link type="text/css" rel="stylesheet" href="//cloud.typography.com/75214/6517752/css/fonts.css" media="all" />
+
+    <!-- Import the BYU Web Components -->
+    <link rel="stylesheet" href="https://cdn.byu.edu/byu-theme-components/latest/byu-theme-components.min.css" />
+    <script async src="https://cdn.byu.edu/byu-theme-components/latest/byu-theme-components.min.js"></script>
+
+    <!-- Import the BYU-Card-Layout -->
+    <script src="../dist/components.min.js"></script>
+    <!-- Import the BYU-Card -->
+    <script src="https://cdn.byu.edu/byu-card/latest/byu-card.min.js"></script>
+
+</head>
+
+<body>
+    <byu-header>
+        <span slot="site-title">BYU Layouts Demo Site</span>
+        <byu-menu slot="nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="uniform.html">Uniform</a>
+            <a href="non-uniform.html">Non-Uniform</a>
+        </byu-menu>
+    </byu-header>
+
+    <div class="page-content">
+        <h1 class="header">Examples of the BYU Card component</h1>
+        <div class="test-wrapper">
+            <byu-card>
+                <h2>Title of Page Here</h2>
+                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
+                <p>There is a lot of information on this card. Starting with:</p>
+                <ul>
+                    <li>
+                        <a href="page-1">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="page-2">Link 2</a>
+                    </li>
+                </ul>
+                <p>There is even more on this card. A lot of text to read and I can put links in wherever I would like. For
+                    example,
+                    <a href="../blog">read our blog</a>.
+                </p>
+            </byu-card>
+
+            <byu-card>
+                <h1>Title of Page Here</h2>
+                    <p>There is a lot of information on this card. Starting with:</p>
+                    <p>There is even more on this card. A lot of text to read and I can put links in wherever I would like.
+                        For example,
+                        <a href="../blog">read our blog</a>.
+                    </p>
+            </byu-card>
+
+            <byu-card>
+                <h2>Title of Page Here</h2>
+                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
+                <p>Not much information on this card.</p>
+            </byu-card>
+
+            <byu-card>
+                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
+                <h2>Title of Page Here</h2>
+            </byu-card>
+
+            <byu-card>
+                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
+                <h2>Title of Page Here</h2>
+                <p>Not much information on this card.</p>
+            </byu-card>
+        </div>
+    </div>
+
+    <footer>
+        <byu-footer></byu-footer>
+    </footer>
+</body>
+
+</html>

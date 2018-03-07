@@ -41,11 +41,11 @@ gulp.task('watch', ['build'], function (done) {
     server: {
       baseDir: './',
     },
-    startPath: '/demo.html',
+    startPath: '/docs/index.html',
     notify: false
   }, done);
 
-  gulp.watch(['demo.html', './components/**'], ['build']);
+  gulp.watch(['/docs/**', './components/**'], ['build']);
 });
 
 gulp.task('default', ['watch']);

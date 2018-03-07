@@ -1,0 +1,18 @@
+@mixin cardLayoutMain() {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin uniformLayout() {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@mixin nonUniformLayout() {
+    flex-direction: column;
+    max-height: 165vh;
+
+    byu-card {
+        display: table;
+    }
+}
