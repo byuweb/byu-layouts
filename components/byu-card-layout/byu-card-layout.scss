@@ -1,0 +1,13 @@
+@import "/byu-card-layout-common.scss";
+
+:host {
+    @include cardLayoutMain();
+}
+
+:host([uniform]) {
+    @include uniformLayout();
+}
+
+:host([non-uniform]) {
+    @include nonUniformLayout();
+}

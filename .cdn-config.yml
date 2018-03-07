@@ -1,0 +1,12 @@
+---
+name: byu-card-layout
+description: byu-card-layout
+resources:
+  - src: dist/**
+    dest: ./
+entrypoints:
+  "byu-card-layout.js": 'Examines browser support and downloads the appropriate component bundle'
+  "byu-card-layout.min.js": 'Minified - Examines browser support and downloads the appropriate component bundle'
+  "byu-card-layout.css": 'Main CSS file'
+  "byu-card-layout.min.css": 'Main CSS file'
+docs: https://github.com/byuweb/byu-card-layout
