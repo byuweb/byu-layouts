@@ -116,6 +116,10 @@ function matchesSelector(el, selector) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_card_layout_html__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_card_layout_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_card_layout_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(3);
+// TODO:
+
+// Added attribute to allow the user to set number of columns for the layout
+
 
 
 

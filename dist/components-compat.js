@@ -140,6 +140,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
     var __WEBPACK_IMPORTED_MODULE_0__byu_card_layout_html__ = __webpack_require__(10);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_0__byu_card_layout_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_card_layout_html__);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(3);
+    // TODO:
+
+    // Added attribute to allow the user to set number of columns for the layout
+
 
     var BYUCardLayout = function (_HTMLElement) {
         _inherits(BYUCardLayout, _HTMLElement);
@@ -505,6 +509,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
     /***/
 }]
 /******/);
+//# sourceMappingURL=components.js.map
 }());
 
 //# sourceMappingURL=components-compat.js.map

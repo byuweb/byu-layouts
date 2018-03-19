@@ -1,3 +1,7 @@
+// TODO:
+
+// Added attribute to allow the user to set number of columns for the layout
+
 'use strict';
 
 import template from './byu-card-layout.html';
