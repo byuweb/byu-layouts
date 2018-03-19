@@ -149,7 +149,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
             var _this = _possibleConstructorReturn(this, (BYUCardLayout.__proto__ || Object.getPrototypeOf(BYUCardLayout)).call(this));
 
-            _this.attachShadow({ mode: 'open' });
+            var shadowRoot = _this.attachShadow({ mode: 'open' });
             return _this;
         }
 
@@ -372,7 +372,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
     // module
-    exports.push([module.i, ":host{display:flex;flex-wrap:wrap}:host([uniform]){flex-direction:row;justify-content:space-evenly}:host([non-uniform]){flex-direction:column;max-height:165vh}:host([non-uniform]) byu-card{display:table}", ""]);
+    exports.push([module.i, ":host([non-uniform]) .slot-container{margin:1.5em 0;padding:0;-moz-column-gap:1.5em;-webkit-column-gap:1.5em;column-gap:1.5em;column-count:3}:host([non-uniform]) ::slotted(byu-card){width:100%}", ""]);
 
     // exports
 
@@ -500,7 +500,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /* 10 */
 /***/function (module, exports, __webpack_require__) {
 
-    module.exports = "<style>" + __webpack_require__(7) + "</style> <slot></slot>";
+    module.exports = "<style>" + __webpack_require__(7) + "</style> <div class=\"slot-container\"> <slot></slot> </div>";
 
     /***/
 }]
