@@ -509,7 +509,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
     /***/
 }]
 /******/);
-//# sourceMappingURL=components.js.map
 }());
 
 //# sourceMappingURL=components-compat.js.map
