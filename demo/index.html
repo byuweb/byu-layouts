@@ -28,59 +28,70 @@
     <!-- Import the BYU Web Components -->
     <link rel="stylesheet" href="https://cdn.byu.edu/byu-theme-components/latest/byu-theme-components.min.css" />
     <script async src="https://cdn.byu.edu/byu-theme-components/latest/byu-theme-components.min.js"></script>
-
+ 
     <!-- Import the BYU-Card-Layout -->
-    <script src="../dist/components.min.js"></script>
+    <script src="../components.min.js"></script>
     <!-- Import the BYU-Card -->
     <script src="https://cdn.byu.edu/byu-card/latest/byu-card.min.js"></script>
 
 </head>
-
 <body>
     <byu-header>
         <span slot="site-title">BYU Layouts Demo Site</span>
         <byu-menu slot="nav">
-            <a href="index.html">Home</a>
-            <a href="uniform.html" class="active">Uniform</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="uniform.html">Uniform</a>
             <a href="non-uniform.html">Non-Uniform</a>
         </byu-menu>
     </byu-header>
 
     <div class="page-content">
-        <h1 class="header">Uniform BYU Card Layout</h1>
-        <byu-card-layout uniform>
+        <h1 class="header">Examples of the BYU Card component used in the layouts</h1>
+        <div class="test-wrapper">
+            <byu-card>
+                <h2>Title of Page Here</h2>
+                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
+                <p>There is a lot of information on this card. Starting with:</p>
+                <ul>
+                    <li>
+                        <a href="page-1">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="page-2">Link 2</a>
+                    </li>
+                </ul>
+                <p>There is even more on this card. A lot of text to read and I can put links in wherever I would like. For
+                    example,
+                    <a href="../blog">read our blog</a>.
+                </p>
+            </byu-card>
 
             <byu-card>
+                <h1>Title of Page Here</h2>
+                <p>There is a lot of information on this card. Starting with:</p>
+                <p>There is even more on this card. A lot of text to read and I can put links in wherever I would like.
+                    For example,
+                    <a href="../blog">read our blog</a>.
+                </p>
+            </byu-card>
+
+            <byu-card>
+                <h2>Title of Page Here</h2>
                 <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here 1</h2>
+                <p>Not much information on this card.</p>
             </byu-card>
 
             <byu-card>
                 <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here 2</h2>
+                <h2>Title of Page Here</h2>
             </byu-card>
 
             <byu-card>
                 <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here 3</h2>
+                <h2>Title of Page Here</h2>
+                <p>Not much information on this card.</p>
             </byu-card>
-
-            <byu-card>
-                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here 4</h2>
-            </byu-card>
-
-            <byu-card>
-                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here 5</h2>
-            </byu-card>
-
-            <byu-card>
-                <img src="https://byu.edu/sites/default/files/2018-03/Downloaded44_1215.jpg">
-                <h2>Title of Page Here 6</h2>
-            </byu-card>
-
-        </byu-card-layout>
+        </div>
     </div>
 
     <footer>

@@ -129,7 +129,7 @@ class BYUCardLayout extends HTMLElement {
 
     constructor() {
         super();
-        this.attachShadow({mode: 'open'});
+        const shadowRoot = this.attachShadow({mode: 'open'});
     }
 
     connectedCallback() {
@@ -139,6 +139,7 @@ class BYUCardLayout extends HTMLElement {
 
 window.customElements.define('byu-card-layout', BYUCardLayout);
 window.BYUCardLayout = BYUCardLayout;
+
 
 /***/ }),
 /* 2 */
@@ -357,7 +358,7 @@ exports = module.exports = __webpack_require__(8)();
 
 
 // module
-exports.push([module.i, ":host{display:flex;flex-wrap:wrap}:host([uniform]){flex-direction:row;justify-content:space-evenly}:host([non-uniform]){flex-direction:column;max-height:165vh}:host([non-uniform]) byu-card{display:table}", ""]);
+exports.push([module.i, ":host([non-uniform]) .slot-container{margin:1.5em 0;padding:0;-moz-column-gap:1.5em;-webkit-column-gap:1.5em;column-gap:1.5em;column-count:3}:host([non-uniform]) ::slotted(byu-card){width:100%}", ""]);
 
 // exports
 
@@ -487,7 +488,7 @@ module.exports = sum;
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__(7) + "</style> <slot></slot>";
+module.exports = "<style>" + __webpack_require__(7) + "</style> <div class=\"slot-container\"> <slot></slot> </div>";
 
 /***/ })
 /******/ ]);

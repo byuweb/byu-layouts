@@ -11,7 +11,7 @@ class BYUCardLayout extends HTMLElement {
 
     constructor() {
         super();
-        this.attachShadow({mode: 'open'});
+        const shadowRoot = this.attachShadow({mode: 'open'});
     }
 
     connectedCallback() {
