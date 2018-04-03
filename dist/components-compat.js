@@ -376,7 +376,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
     // module
-    exports.push([module.i, ":host([non-uniform]) .slot-container{margin:1.5em 0;padding:0;-moz-column-gap:1.5em;-webkit-column-gap:1.5em;column-gap:1.5em;column-count:3}:host([non-uniform]) ::slotted(byu-card){width:100%}", ""]);
+    exports.push([module.i, ":host([non-uniform]) .slot-container{margin:1.5em 0;padding:0;-moz-column-gap:1.5em;-webkit-column-gap:1.5em;column-gap:1.5em;column-count:3}:host([non-uniform]) ::slotted(byu-card){width:100%}@media screen and (max-width:1023px){:host([non-uniform]) .slot-container{column-count:2}}@media screen and (max-width:767px){:host([non-uniform]) .slot-container{column-count:1}}", ""]);
 
     // exports
 
