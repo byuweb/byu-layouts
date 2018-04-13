@@ -16,6 +16,10 @@ class BYUCardLayout extends HTMLElement {
 
     connectedCallback() {
         util.applyTemplate(this, 'byu-card-layout', template);
+        var columns = this.getAttribute('column-count');
+            this.shadowRoot.querySelector('.slot-container').classList.add(columns + '-col'); 
+        
+        
     }
 }
 

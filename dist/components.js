@@ -134,6 +134,10 @@ class BYUCardLayout extends HTMLElement {
 
     connectedCallback() {
         __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-card-layout', __WEBPACK_IMPORTED_MODULE_0__byu_card_layout_html___default.a);
+        var columns = this.getAttribute('column-count');
+            this.shadowRoot.querySelector('.slot-container').classList.add(columns + '-col'); 
+        
+        
     }
 }
 
@@ -358,7 +362,7 @@ exports = module.exports = __webpack_require__(8)();
 
 
 // module
-exports.push([module.i, ":host([non-uniform]) .slot-container{margin:1.5em 0;padding:0;-moz-column-gap:1.5em;-webkit-column-gap:1.5em;column-gap:1.5em;column-count:3}:host([non-uniform]) ::slotted(byu-card){width:100%}", ""]);
+exports.push([module.i, ":host([non-uniform]) .slot-container{margin:1.5em 0;padding:0;-moz-column-gap:1.5em;-webkit-column-gap:1.5em;column-gap:1.5em;column-count:3}:host([non-uniform]) ::slotted(byu-card){width:100%}@media screen and (max-width:1023px){:host([non-uniform]) .slot-container{column-count:2}}@media screen and (max-width:767px){:host([non-uniform]) .slot-container{column-count:1}}", ""]);
 
 // exports
 
