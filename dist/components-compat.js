@@ -161,6 +161,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
             key: 'connectedCallback',
             value: function connectedCallback() {
                 __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-card-layout', __WEBPACK_IMPORTED_MODULE_0__byu_card_layout_html___default.a);
+                var columns = this.getAttribute('column-count');
+                this.shadowRoot.querySelector('.slot-container').classList.add(columns + '-col');
+            }
+        }], [{
+            key: 'observedAttributes',
+            get: function get() {
+                return ['column-count'];
             }
         }]);
 
