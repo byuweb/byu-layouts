@@ -11,29 +11,29 @@
 }
 
 :host([non-uniform]) {
-        @include nonUniformLayout();
-        .slot-container{   
-            margin: 1.5em 0;
-            padding: 0;
-            -moz-column-gap: 1.5em;
-            -webkit-column-gap: 1.5em;
-            column-gap: 1.5em;
-            column-count: 3;
-        } 
-        ::slotted(byu-card) {
-            width:100%;
-        } 
-        @media screen and (max-width: 1023px) {
-            .slot-container{    
-                column-count: 2;
-            } 
-        }
-        @media screen and (max-width: 767px) {
-            .slot-container{   
-                column-count: 1;
-            } 
+    @include nonUniformLayout();
 
-        }
-           
+    .slot-container{   
+        margin: 1.5em 0;
+        padding: 0;
+        -moz-column-gap: 1.5em;
+        -webkit-column-gap: 1.5em;
+        column-gap: 1.5em;
+        column-count: 3;
+    } 
+    ::slotted(byu-card) {
+        width:100%;
+    } 
+    @media screen and (max-width: 1023px) {
+        .slot-container{    
+            column-count: 2;
+        } 
+    }
+    @media screen and (max-width: 767px) {
+        .slot-container{   
+            column-count: 1;
+        } 
+
+    }
 }
   

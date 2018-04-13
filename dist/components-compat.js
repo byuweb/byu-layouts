@@ -164,11 +164,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                 var columns = this.getAttribute('column-count');
                 this.shadowRoot.querySelector('.slot-container').classList.add(columns + '-col');
             }
-        }], [{
-            key: 'observedAttributes',
-            get: function get() {
-                return ['column-count'];
-            }
         }]);
 
         return BYUCardLayout;
@@ -516,6 +511,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
     /***/
 }]
 /******/);
+//# sourceMappingURL=components.js.map
 }());
 
 //# sourceMappingURL=components-compat.js.map

@@ -13,9 +13,6 @@ class BYUCardLayout extends HTMLElement {
         super();
         const shadowRoot = this.attachShadow({mode: 'open'});
     }
-    static get observedAttributes() {
-        return ['column-count'];
-    }
 
     connectedCallback() {
         util.applyTemplate(this, 'byu-card-layout', template);
